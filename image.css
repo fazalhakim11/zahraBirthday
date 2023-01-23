@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("img/carousel 9.jpg"); }
+  .img2 { background-image: url("img/6.jpg"); }
+  .img3 { background-image: url("img/5.jpg"); }
+  .img4 { background-image: url("img/carousel 7.jpg"); }
+  .img5 { background-image: url("img/carousel 6.jpg"); }
+  .img6 { background-image: url("img/9.jpg"); }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    /* border: 10px solid #f1f1f1; */
+    border-radius: 10px;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  p{
+    font-size: .618rem;
+  }
+
+  .arow {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    bottom: 15px;
+  }
+
+  .scroll {
+    transform: rotate(-90deg);
+    position: relative;
+    right: 7px;
+  }
+
+  .f-size {
+    font-size: .9rem;
+  }
+
+  @media (min-width: 768px) {
+    .bg-text {
+      width: 600px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p{
+      font-size: .927rem;
+    }
+
+    .scroll {
+      right: 15px;
+    }
+
+    .img1, .img3 {
+      background-position: 0 25%;
+    }
+
+    .img2, .img4 {
+      background-position: 0 35%;
+    }
+
+    .img5 {
+      background-position: 0 15%;
+    }
+  }
