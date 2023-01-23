@@ -46,11 +46,11 @@ body, html {
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 1.618rem;
   }
 
   p{
-    font-size: .618rem;
+    font-size: 1rem;
   }
 
   .arow {
